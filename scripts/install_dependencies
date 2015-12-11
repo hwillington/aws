@@ -1,0 +1,5 @@
+#!/bin/bash
+rpm -qa|grep httpd
+if [ $? -ne 0 ]; then
+  yum install -y httpd
+fi
